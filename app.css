@@ -1,0 +1,121 @@
+html {
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.heading {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.bodyp {
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    line-height: 25px;
+    padding-bottom: 20px;
+}
+
+.button-1 {
+    color: hsl(31, 77%, 52%);
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 40px;
+}
+.button-2 {
+    color: hsl(184, 100%, 22%);
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 40px;
+}
+.button-3 {
+    color: hsl(179, 100%, 13%);
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 40px;
+}
+
+.button-1:hover {
+    color: white;
+    background-color: hsl(31, 77%, 52%);
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 40px;
+}
+
+.button-2:hover {
+    color: white;
+    background-color: hsl(184, 100%, 22%);
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 40px;
+}
+
+.button-3:hover {
+    color: white;
+    background-color: hsl(179, 100%, 13%);
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 40px;
+}
+
+.full-container {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-1 {
+    background-color: hsl(31, 77%, 52%);
+    padding: 50px;
+    border: 1px solid transparent;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+
+.container-2 {
+    background-color:hsl(184, 100%, 22%);
+    padding: 50px;
+}
+
+.container-3 {
+    background-color:  hsl(179, 100%, 13%);
+    padding: 50px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+@media (min-width: 600px) {
+    .full-container {
+        flex-direction: row;
+    } 
+    .container-1 {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+    }
+    .container-3 {
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+}
+
+
+
